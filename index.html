@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NoteYouLike</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Note You Like</h1>
+    </div>
+    <div class="container">
+        <div class="bookcontainer">
+            <h2>my routine</h2>
+            <h3>Improvement active</h3>
+            <p>Wake up at the same time every morning.
+                Journal for 15 minutes about personal or professional goals.
+                Eat breakfast and get ready for work.
+                Commute to work, if applicable.
+                Read and respond to emails.
+                Create a list of tasks for the day.
+                Work on tasks.
+                Take lunch.</p>
+            <button onclick="deletebook(event)">Delete</button>
+        </div>
+    </div>
+    <div class="popup"></div>
+    <div class="popupbox">
+        <h2>Note</h2>
+        <form action="">
+            <input type="text" id="booktitle" placeholder="your name">
+            <input type="text" id="bookauthor" placeholder="Title">
+            <textarea name="" id="bookdiscription" placeholder="About you"></textarea>
+            <button id="popadd">Add</button>
+            <button id="popcancel" >Cancel</button>
+        </form>
+    </div>
+
+    <button class="add" id="btn" onclick="">+</button>
+</body>
+<script src="demo.js">l</script>
+</html>
